@@ -1,0 +1,85 @@
+Launching lib\main.dart on SM A065F in debug mode...
+Running Gradle task 'assembleDebug'...                          
+lib/features/dashboard/screens/home_screen.dart:102:20: Error: Can't find ']' to match '['.
+          slivers: [
+                   ^
+lib/features/dashboard/screens/home_screen.dart:101:32: Error: Can't find ')' to match '('.
+        child: CustomScrollView(
+                               ^
+lib/features/dashboard/screens/home_screen.dart:100:21: Error: Can't find ')' to match '('.
+      body: SafeArea(
+                    ^
+lib/features/dashboard/screens/home_screen.dart:99:20: Error: Can't find ')' to match '('.
+    return Scaffold(
+                   ^
+lib/features/dashboard/screens/home_screen.dart:39:42: Error: Can't find '}' to match '{'.
+class HomeScreen extends StatelessWidget {
+                                         ^
+lib/features/dashboard/screens/home_screen.dart:139:10: Error: A function expression can't have a name.
+  Widget _buildCalculatorCard(
+         ^^^^^^^^^^^^^^^^^^^^
+lib/features/dashboard/screens/home_screen.dart:219:3: Error: Expected ',' before this.
+  Widget _buildSettingsSection(BuildContext context) {
+  ^^^^^^
+lib/features/dashboard/screens/home_screen.dart:219:10: Error: A function expression can't have a name.
+  Widget _buildSettingsSection(BuildContext context) {
+         ^^^^^^^^^^^^^^^^^^^^^
+lib/features/dashboard/screens/home_screen.dart:239:3: Error: Expected ';' after this.
+  }
+  ^
+lib/features/dashboard/screens/home_screen.dart:149:22: Error: Local variable '_openCalculator' can't be referenced before it is declared.
+        onTap: () => _openCalculator(context, type, index),
+                     ^^^^^^^^^^^^^^^
+lib/features/dashboard/screens/home_screen.dart:242:8: Context: This is the declaration of the variable '_openCalculator'.
+  void _openCalculator(BuildContext context, CalculatorType type, int index) {
+       ^^^^^^^^^^^^^^^
+lib/features/dashboard/screens/home_screen.dart:109:36: Error: Local variable '_openSettings' can't be referenced before it is declared.
+                  onPressed: () => _openSettings(context),
+                                   ^^^^^^^^^^^^^
+lib/features/dashboard/screens/home_screen.dart:274:8: Context: This is the declaration of the variable '_openSettings'.
+  void _openSettings(BuildContext context) {
+       ^^^^^^^^^^^^^
+lib/features/dashboard/screens/home_screen.dart:235:24: Error: Local variable '_openSettings' can't be referenced before it is declared.
+          onTap: () => _openSettings(context),
+                       ^^^^^^^^^^^^^
+lib/features/dashboard/screens/home_screen.dart:274:8: Context: This is the declaration of the variable '_openSettings'.
+  void _openSettings(BuildContext context) {
+       ^^^^^^^^^^^^^
+lib/features/dashboard/screens/home_screen.dart:109:36: Error: The method '_openSettings' isn't defined for the type 'HomeScreen'.
+ - 'HomeScreen' is from 'package:cgpacalculator/features/dashboard/screens/home_screen.dart' ('lib/features/dashboard/screens/home_screen.dart').
+Try correcting the name to the name of an existing method, or defining a method named '_openSettings'.
+                  onPressed: () => _openSettings(context),
+                                   ^^^^^^^^^^^^^
+lib/features/dashboard/screens/home_screen.dart:128:39: Error: The method '_buildCalculatorCard' isn't defined for the type 'HomeScreen'.
+ - 'HomeScreen' is from 'package:cgpacalculator/features/dashboard/screens/home_screen.dart' ('lib/features/dashboard/screens/home_screen.dart').
+Try correcting the name to the name of an existing method, or defining a method named '_buildCalculatorCard'.
+                  (context, index) => _buildCalculatorCard(
+                                      ^^^^^^^^^^^^^^^^^^^^
+lib/features/dashboard/screens/home_screen.dart:149:22: Error: The method '_openCalculator' isn't defined for the type 'HomeScreen'.
+ - 'HomeScreen' is from 'package:cgpacalculator/features/dashboard/screens/home_screen.dart' ('lib/features/dashboard/screens/home_screen.dart').
+Try correcting the name to the name of an existing method, or defining a method named '_openCalculator'.
+        onTap: () => _openCalculator(context, type, index),
+                     ^^^^^^^^^^^^^^^
+lib/features/dashboard/screens/home_screen.dart:235:24: Error: The method '_openSettings' isn't defined for the type 'HomeScreen'.
+ - 'HomeScreen' is from 'package:cgpacalculator/features/dashboard/screens/home_screen.dart' ('lib/features/dashboard/screens/home_screen.dart').
+Try correcting the name to the name of an existing method, or defining a method named '_openSettings'.
+          onTap: () => _openSettings(context),
+                       ^^^^^^^^^^^^^
+Target kernel_snapshot_program failed: Exception
+
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:compileFlutterBuildDebug'.
+> Process 'command 'C:\Users\Public\allflutter\fluttersdk\flutter_windows_3.38.1-stable\flutter\bin\flutter.bat'' finished with non-zero exit value 1
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 12s
+Running Gradle task 'assembleDebug'...                             13.5s
+Error: Gradle task assembleDebug failed with exit code 1
